@@ -1,0 +1,31 @@
+---
+
+---
+
+body {
+	width: 90%;
+	margin:auto;
+	max-width:1440px;
+}
+ 
+.setColumnWidth (@columns, @margin, @combine) {
+    @totalMargin: (@columns - 1)*@margin;
+    @columnWidth: (100% - @totalMargin)/@columns;
+    @wideColumn: (@columnWidth * @combine) + (@margin * (@combine - 1));
+    width: @wideColumn;
+    margin-left: @margin;
+}
+
+.mainColumn {
+	float:left;
+	.setColumnWidth(8,4%,2);
+}
+
+.mainBigColumn {
+	float:left;
+	.setColumnWidth(8,4%,4);
+}
+
+.nav {
+  margin-left: 0;
+}

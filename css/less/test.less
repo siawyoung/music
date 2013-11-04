@@ -1,0 +1,49 @@
+---
+
+---
+
+@import "columns.css";
+@import "fonts.css";
+
+
+// iFrame
+
+iframe {
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+}
+
+/* Colors */
+
+@backgroundColor: hsl(74, 0%, 99%);
+@fontColor: hsl(74, 0%, 20%);
+
+.headerFont {
+	font-family:  "Playfair Display";
+	font-weight: bold;
+	color: @fontColor;
+}
+
+body {
+	background-color: @backgroundColor;
+}
+
+h1 {
+	font-family: "Georgia";
+	font-size:2.5em;
+	text-align: center;
+}
+
+h2 {
+	font-family: "Georgia";
+	font-size:2em;
+	text-align: center;
+}
+
+p,li {
+	font-family: "Georgia";
+	color: @fontColor;
+	font-size:1.22em;
+	line-height:1.9em;
+}

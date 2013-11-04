@@ -1,0 +1,18 @@
+body {
+  width: 90%;
+  margin: auto;
+  max-width: 1440px;
+}
+.mainColumn {
+  float: left;
+  width: 22%;
+  margin-left: 4%;
+}
+.mainBigColumn {
+  float: left;
+  width: 48%;
+  margin-left: 4%;
+}
+.nav {
+  margin-left: 0;
+}
